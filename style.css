@@ -146,13 +146,13 @@
                 "one one two"
                 " three four four"
                 "five five five";
-            padding-inline: 2em;
+            margin-inline: 2em;
         }
     }
 
     @media(min-width:1100px) {
         main {
-            margin-top: 3em;
+            /* margin-top: 3em; */
             width: 80%;
         }
                 
