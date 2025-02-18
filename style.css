@@ -40,9 +40,6 @@
 
     .one {
         background-color: var(--Purple-500);
-        background-image: url(images/bg-pattern-quotation.svg);
-        background-repeat: no-repeat;
-        background-position: calc(100% - 40px) calc(100% - 100%);
         grid-area: one;
     }
 
@@ -128,9 +125,15 @@
 
     .dark-text {
         color: var(--Grey-400);
+        font-weight: 600;
     }
 
     @media(min-width:50em) {
+        .one {
+                background-image: url(images/bg-pattern-quotation.svg);
+                background-repeat: no-repeat;
+                background-position: calc(100% - 40px) calc(100% - 100%);
+            }
 
         .testmonial-container {
             grid-template-columns: repeat(3, 1fr);
@@ -147,6 +150,7 @@
             margin-top: 3em;
             width: 80%;
         }
+                
 
         .testmonial-container {
             grid-template-columns: repeat(4, 1fr);
