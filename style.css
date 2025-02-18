@@ -121,12 +121,17 @@
     .testmonial-item {
         border-radius: 10px;
         box-shadow: 18px 18px 10px var(--Grey-200);
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     }
 
     .dark-text {
         color: var(--Grey-400);
         font-weight: 600;
     }
+        .testimonial-item:hover,
+        .testmonial-item:focus {
+            transform: scale(1.05);
+        }
 
     @media(min-width:50em) {
         .one {
